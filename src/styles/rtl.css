@@ -1,0 +1,93 @@
+
+[dir="rtl"] {
+  /* General text direction */
+  text-align: right;
+}
+
+[dir="rtl"] .flex {
+  /* Reverse flex direction for RTL mode */
+  flex-direction: row-reverse;
+}
+
+/* Margin and padding adjustments */
+[dir="rtl"] .mr-1 { margin-right: 0; margin-left: 0.25rem; }
+[dir="rtl"] .mr-2 { margin-right: 0; margin-left: 0.5rem; }
+[dir="rtl"] .mr-3 { margin-right: 0; margin-left: 0.75rem; }
+[dir="rtl"] .mr-4 { margin-right: 0; margin-left: 1rem; }
+
+[dir="rtl"] .ml-1 { margin-left: 0; margin-right: 0.25rem; }
+[dir="rtl"] .ml-2 { margin-left: 0; margin-right: 0.5rem; }
+[dir="rtl"] .ml-3 { margin-left: 0; margin-right: 0.75rem; }
+[dir="rtl"] .ml-4 { margin-left: 0; margin-right: 1rem; }
+
+[dir="rtl"] .pl-1 { padding-left: 0; padding-right: 0.25rem; }
+[dir="rtl"] .pl-2 { padding-left: 0; padding-right: 0.5rem; }
+[dir="rtl"] .pl-3 { padding-left: 0; padding-right: 0.75rem; }
+[dir="rtl"] .pl-4 { padding-left: 0; padding-right: 1rem; }
+
+[dir="rtl"] .pr-1 { padding-right: 0; padding-left: 0.25rem; }
+[dir="rtl"] .pr-2 { padding-right: 0; padding-left: 0.5rem; }
+[dir="rtl"] .pr-3 { padding-right: 0; padding-left: 0.75rem; }
+[dir="rtl"] .pr-4 { padding-right: 0; padding-left: 1rem; }
+
+/* Force overrides for certain elements */
+[dir="rtl"] .space-x-1 > * + *,
+[dir="rtl"] .space-x-2 > * + *,
+[dir="rtl"] .space-x-4 > * + * {
+  margin-left: 0;
+}
+
+[dir="rtl"] .space-x-1 > * {
+  margin-right: 0.25rem;
+}
+
+[dir="rtl"] .space-x-2 > * {
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .space-x-4 > * {
+  margin-right: 1rem;
+}
+
+/* Specific component fixes */
+[dir="rtl"] .accordion-trigger {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .select-trigger {
+  text-align: right;
+}
+
+[dir="rtl"] .input {
+  text-align: right;
+}
+
+[dir="rtl"] .card-header {
+  text-align: right;
+}
+
+[dir="rtl"] .toast {
+  right: auto;
+  left: 1rem;
+}
+
+[dir="rtl"] .icon-left {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .icon-right {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+/* Button icon adjustments */
+[dir="rtl"] button svg:first-child:not(:last-child) {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] button svg:last-child:not(:first-child) {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
